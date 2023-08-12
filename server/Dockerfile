@@ -1,5 +1,7 @@
 # 이미지 설정
 FROM openjdk:17-jdk
+# 포트설정
+EXPOSE 8080
 # 빌드된 jar 파일 위치를 변수로 설정
 ARG JAR_FILE=build/*.jar
 # jar 파일을 컨테이너 내부에 복사
