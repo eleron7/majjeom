@@ -7,4 +7,4 @@ ARG JAR_FILE=/var/jenkins_home/workspace/majjeom/server/build/libs/*.jar
 # jar 파일을 컨테이너 내부에 복사
 COPY ${JAR_FILE} majjeom.jar
 # 실행 명령어
-ENTRYPOINT ["java","-jar","majjeom.jar"]
+ENTRYPOINT ["java","-jar","server.jar"]

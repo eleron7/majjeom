@@ -10,7 +10,7 @@ version = '0.0.1-SNAPSHOT'
 java {
 	sourceCompatibility = '17'
 }
-
+-m
 repositories {
 	mavenCentral()
 }
@@ -23,4 +23,8 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+bootJar {
+	archiveFileName = 'server.jar' // JAR 파일 이름 설정
 }
