@@ -5,6 +5,6 @@ EXPOSE 8080
 # 빌드된 jar 파일 위치를 변수로 설정
 ARG JAR_FILE=/var/jenkins_home/workspace/majjeom/server/build/libs/*.jar
 # jar 파일을 컨테이너 내부에 복사
-COPY ${JAR_FILE} majjeom.jar
+COPY ${JAR_FILE} server.jar
 # 실행 명령어
 ENTRYPOINT ["java","-jar","server.jar"]
